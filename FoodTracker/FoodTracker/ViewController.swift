@@ -14,16 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingController: RatingController!
     
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.delegate = self
-    }
-    
-    //MARK: Action
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealNameLabel.text = "Default Text"
     }
     
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
