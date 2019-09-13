@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30D6B96232B77BF00FD0C20 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D6B95232B77BF00FD0C20 /* Meal.swift */; };
 		F31724A22328CC8A00992A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31724A12328CC8A00992A6F /* AppDelegate.swift */; };
 		F31724A42328CC8A00992A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31724A32328CC8A00992A6F /* ViewController.swift */; };
 		F31724A72328CC8A00992A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31724A52328CC8A00992A6F /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F30D6B95232B77BF00FD0C20 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		F317249E2328CC8A00992A6F /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31724A12328CC8A00992A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F31724A32328CC8A00992A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				F31724A32328CC8A00992A6F /* ViewController.swift */,
 				F31724C12328F6DE00992A6F /* RatingController.swift */,
 				F31724A52328CC8A00992A6F /* Main.storyboard */,
+				F30D6B95232B77BF00FD0C20 /* Meal.swift */,
 				F31724A82328CC8F00992A6F /* Assets.xcassets */,
 				F31724AA2328CC8F00992A6F /* LaunchScreen.storyboard */,
 				F31724AD2328CC8F00992A6F /* Info.plist */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30D6B96232B77BF00FD0C20 /* Meal.swift in Sources */,
 				F31724A42328CC8A00992A6F /* ViewController.swift in Sources */,
 				F31724A22328CC8A00992A6F /* AppDelegate.swift in Sources */,
 				F31724C22328F6DE00992A6F /* RatingController.swift in Sources */,
