@@ -23,7 +23,7 @@ class GamePickerViewController: UITableViewController {
     var selectedGame:String?{
         didSet {
             if let selectedGame = selectedGame,
-                let index = games.index(of: selectedGame){
+                let index = games.firstIndex(of: selectedGame){
                 selectedGameIndex = index
             }
         }

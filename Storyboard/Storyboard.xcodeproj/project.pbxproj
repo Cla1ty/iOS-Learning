@@ -19,6 +19,7 @@
 		4E0537A2210789B600F9661F /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0537A1210789B600F9661F /* PlayerDetailsViewController.swift */; };
 		4E33FDD7210B87520054EC7C /* Players.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E33FDD6210B87520054EC7C /* Players.storyboard */; };
 		4E50AF83210A403400740CB3 /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50AF82210A403400740CB3 /* GamePickerViewController.swift */; };
+		F3001978234609F100A5C226 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3001977234609F100A5C226 /* Test.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4E0537A1210789B600F9661F /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 		4E33FDD6210B87520054EC7C /* Players.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Players.storyboard; sourceTree = "<group>"; };
 		4E50AF82210A403400740CB3 /* GamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
+		F3001977234609F100A5C226 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,14 +70,12 @@
 		4E053786210761FD00F9661F /* Rating */ = {
 			isa = PBXGroup;
 			children = (
+				F3DB09F4234F2527006D9670 /* Storyboard */,
 				4E223BBA2108D95D00DC77FF /* Controller */,
 				4E223BB92108D95300DC77FF /* View */,
 				4E223BB82108D94B00DC77FF /* Model */,
 				4E053787210761FD00F9661F /* AppDelegate.swift */,
-				4E05378B210761FD00F9661F /* Main.storyboard */,
-				4E33FDD6210B87520054EC7C /* Players.storyboard */,
 				4E05378E210761FD00F9661F /* Assets.xcassets */,
-				4E053790210761FD00F9661F /* LaunchScreen.storyboard */,
 				4E053793210761FD00F9661F /* Info.plist */,
 			);
 			path = Rating;
@@ -109,6 +109,17 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		F3DB09F4234F2527006D9670 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4E05378B210761FD00F9661F /* Main.storyboard */,
+				4E33FDD6210B87520054EC7C /* Players.storyboard */,
+				4E053790210761FD00F9661F /* LaunchScreen.storyboard */,
+				F3001977234609F100A5C226 /* Test.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,11 +147,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Dwi Ariyanto";
 				TargetAttributes = {
 					4E053783210761FD00F9661F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -172,6 +184,7 @@
 				4E33FDD7210B87520054EC7C /* Players.storyboard in Resources */,
 				4E05378F210761FD00F9661F /* Assets.xcassets in Resources */,
 				4E05378D210761FD00F9661F /* Main.storyboard in Resources */,
+				F3001978234609F100A5C226 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +242,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -236,6 +250,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -286,6 +301,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -293,6 +309,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -332,7 +349,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dwiariyanto.Rating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -347,7 +364,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dwiariyanto.Rating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
