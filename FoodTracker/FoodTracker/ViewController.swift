@@ -26,6 +26,13 @@ class MealViewController: UIViewController {
         super.viewDidLoad()
         nameTextField.delegate = self
         
+        if let meal = meal {
+            navigationItem.title = meal.name
+            nameTextField.text = meal.name
+            photoImageView.image = meal.photo
+            ratingController.rating = meal.rating
+        }
+
         updateSaveButtonState()
     }
     
@@ -49,7 +56,16 @@ class MealViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+        if isPresentingInAddMealMode {
+            dismiss(animated: true, completion: nil)
+        } else if let owningNavigationController = navigationController{
+            owningNavigationController.popViewController(animated: true)
+        } else {
+            fatalError("The MealViewController is not indide a navigation controller")
+        }
+        
     }
     // MARK: Action
     
@@ -57,7 +73,6 @@ class MealViewController: UIViewController {
         // Hide the keyboard
         nameTextField.resignFirstResponder()
         
-        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.delegate = self
